@@ -4,7 +4,7 @@ pipeline {
     stage('compile-app') {
       steps {
         echo 'this is the compile job'
-        sh 'mvn install'
+        sh 'mvn compile'
         sleep 4
       }
     }
