@@ -12,7 +12,7 @@ pipeline {
     stage('test-app') {
       steps {
         echo 'this is the test job'
-        sh 'mvn test'
+        sh 'mvn clean test'
         sleep 9
       }
     }
